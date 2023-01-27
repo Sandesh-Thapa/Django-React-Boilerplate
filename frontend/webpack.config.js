@@ -1,18 +1,13 @@
 var path = require("path");
-var BundleTracker = require("webpack-bundle-tracker");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: path.join(__dirname, "src/index"),
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "../assets/frontend"),
     filename: "[name].js",
   },
   plugins: [
-    new BundleTracker({
-      path: __dirname,
-      filename: "webpack-stats.json",
-    }),
     new MiniCssExtractPlugin(),
   ],
   module: {

@@ -9,12 +9,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "webpack-bundle-tracker": "^1.8.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "./node_modules/.bin/webpack --config webpack.config.js",
+    "start": "./node_modules/.bin/webpack --config webpack.config.js --mode=development",
     "watch": "npm start -- --watch",
+    "prod": "./node_modules/.bin/webpack --config webpack.config.js --mode=production",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
