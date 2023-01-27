@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client';
+import { App, About } from './baseComponents';
 import './index.css';
-import App from './App';
-import About from "./About";
 
 const components = [
   { id: "app", component: <App /> },
